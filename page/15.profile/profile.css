@@ -1,0 +1,447 @@
+section {
+    margin: 100px auto;
+}
+
+.boxmain {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile-container {
+    max-width: 399px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    height: max-content;
+}
+
+.menu-item {
+    width: 327px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 2px 0;
+    font-size: 16px;
+}
+
+.cont-zak {
+    width: 76%;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    height: max-content;
+}
+
+.item-zak {
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.oform {
+    width: 26%;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    height: max-content;
+}
+
+.oform button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    border-radius: 7px;
+    border: none;
+}
+
+.cont-ofor {
+    display: flex;
+    gap: 10px;
+}
+
+.img-zak {
+    display: flex;
+    gap: 5px;
+}
+
+.item-nazv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 150px;
+}
+
+.item-price {
+    max-width: 170px;
+}
+
+.item-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.radio-input {
+    --container_width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+    background-color: #fff;
+    color: #000000;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 1px solid rgba(53, 52, 52, 0.226);
+}
+
+.radio-input label {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+.selection {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(var(--container_width) / 6);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: .15s ease;
+}
+
+.radio-input label:has(input:checked) {
+    color: #fff;
+}
+
+.radio-input label:has(input:checked) ~ .selection {
+    background-color: rgb(11 117 223);
+    display: inline-block;
+}
+
+.radio-input label:nth-child(1):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 0/6));
+}
+
+.radio-input label:nth-child(2):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 1/6));
+}
+
+.radio-input label:nth-child(3):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 2/6));
+}
+
+.radio-input label:nth-child(4):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 3/6));
+}
+
+.radio-input label:nth-child(5):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 4/6));
+}
+
+.radio-input label:nth-child(6):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 5/6));
+}
+
+.item-nazv button {
+    width: 24px;
+    border: none;
+    background-color: white;
+}
+
+.item-kolvo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.quantity-control:hover {
+    border-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    outline: none;
+}
+
+.quantity-control button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.quantity-control button:active {
+    background: #333;
+}
+
+.quantity-control .minus {
+    border-radius: 25px 0 0 25px;
+}
+
+.quantity-control .plus {
+    border-radius: 0 25px 25px 0;
+}
+
+.quantity-control input[type="number"] {
+    width: 50px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    outline: none;
+    -moz-appearance: textfield;
+}
+
+.quantity-control input[type="number"]::-webkit-outer-spin-button,
+.quantity-control input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.totalprice {
+    margin-top: 10px;
+}
+
+.btn-oform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.modal-header {
+    position: relative;
+    padding: 20px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.oform-header {
+    position: relative;
+    padding: 15px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.order-summary h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.order-items-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+}
+
+.item-name {
+    flex: 2;
+    font-weight: bold;
+    color: #333;
+}
+
+.item-details {
+    flex: 1;
+    text-align: center;
+}
+
+.item-total {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    color: #000;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.delivery-section h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+#delivery-address {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+#delivery-address:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.modal-footer {
+    padding: 20px;
+    text-align: right;
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
+
+.oform-footer {
+    padding: 10px;
+    text-align: right;
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
+
+.submit-btn {
+    padding: 12px 25px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #333;
+}
+
+.submit-btn:active {
+    background: #555;
+}
+
+.vib {
+    background-color: #ADBCF3;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+    }
+    .order-item {
+        flex-direction: column;
+        text-align: left;
+    }
+    .item-details,
+    .item-total {
+        text-align: left;
+        margin-top: 5px;
+    }
+}

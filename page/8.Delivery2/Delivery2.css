@@ -1,0 +1,12 @@
+main {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    display: flex;
+justify-content: center;
+}
+
+
+.map {
+    width: 100%;
+    height: auto;
+}

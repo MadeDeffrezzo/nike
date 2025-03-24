@@ -1,0 +1,89 @@
+main {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+
+
+.help {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.help .help_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.help .help_box .name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.help .help_box .name .profile_img img {
+    width: 80px;
+    height: 80px;
+}
+
+.help .help_box .name .text h3 {
+    font-weight: 600;
+font-size: 22px;
+color: #000;
+margin-bottom: 10px;
+}
+.help .help_box .name .text p {
+    width: 1000px;
+    line-height: 20px;
+}
+
+h2{
+text-align: center;
+font-size: 36px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    main {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .help {
+        margin-bottom: 10px;
+    }
+    .help .help_box {
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .help .help_box .name {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .help .help_box .name .profile_img img {
+        width: 60px;
+        height: 60px;
+    }
+    .help .help_box .name .text h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .help .help_box .name .text p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .time p {
+        font-weight: 800;
+    }
+}

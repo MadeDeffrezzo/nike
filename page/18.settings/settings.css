@@ -1,0 +1,141 @@
+section {
+    margin: 100px auto;
+}
+
+.boxmain {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.profile-container {
+    max-width: 399px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    height: max-content;
+}
+
+.menu-item {
+    width: 327px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 2px 0;
+    font-size: 16px;
+}
+
+.cont-zak {
+    width: 76%;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    height: max-content;
+}
+
+.vib {
+    background-color: #ADBCF3;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.settings-container {
+    padding: 20px;
+}
+
+.settings-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.success-msg {
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.error-msg {
+    color: #f44336;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.form-group input[type="file"] {
+    padding: 5px 0;
+}
+
+.form-group small {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.save-btn {
+    padding: 12px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-self: flex-end;
+}
+
+.save-btn:hover {
+    background: #333;
+}
+
+.save-btn:active {
+    background: #555;
+}

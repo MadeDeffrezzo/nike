@@ -1,0 +1,49 @@
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.onas {
+    background-image: url(../../img/image\ 75.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 50px 120px 20px;
+    height: 525px;
+}
+
+.onas h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.onas p {
+    font-weight: 400;
+font-size: 25px;
+color: #fff;
+}
+
+.logo_history img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .onas {
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+        height: 425px;
+    }
+    .onas h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .onas p {
+        font-size: 20px;
+    }
+}

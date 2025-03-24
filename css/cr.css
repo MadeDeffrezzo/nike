@@ -1,0 +1,26 @@
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.cart h2 {
+    margin: 0;
+    font-size: 18px;
+}
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.cart ul li {
+    margin: 5px 0;
+}
+.total-price {
+    font-weight: bold;
+}

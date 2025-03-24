@@ -1,0 +1,242 @@
+main {
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+}
+.contener_nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.nav_box {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_box img {
+    width: 400px;
+    height: 500px;
+}
+
+.nav_box button {
+    border: none;
+    background-color: #292929;
+    padding: 5px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
+
+.contener_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.text_box {
+    width: 350px;
+    height: auto;
+}
+
+.text_box .img1 {
+    width: 150px;
+    height: 138px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.text_box .img2 {
+    width: 112px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.text_box .img3 {
+    width: 90px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.text_box h3 {
+    font-size: 20px;
+    font-family: 100;
+    margin-bottom: 10px;
+}
+
+.text_box p {
+    font-size: 16px;
+    font-family: 100;
+    margin-bottom: 10px;
+}
+
+
+
+
+.product_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product_box {
+    width: 300px;
+    height: auto;
+    margin-bottom: 60px;
+}
+.product_box img {
+    width: 300px;
+    height: 350px;
+}
+.product_box h3 {
+    width: 270px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.product_box .cena {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.product_box .cena h4 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #000;
+}
+
+.product_box .cena p{
+    text-decoration: line-through;
+    font-weight: 400;
+font-size: 16px;
+color: #818181;
+}
+
+.product_box .cena span{
+    font-weight: 800;
+    font-size: 16px;
+    color: #f00;
+}
+.product_box button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 13px;
+    width: 100%;
+    font-weight: 700;
+font-size: 16px;
+
+transition: 0.2s;
+}
+
+.product_box button:hover{
+    background-color: #5c5c5c;
+}
+
+
+.poster {
+    width: 100%;
+    height: auto;
+}
+
+.avatar{
+    max-width: 150px;
+    border-radius: 999px;
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contener_nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+    .nav_box {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .nav_box img {
+        width: 100%;
+        height: auto;
+    }
+    .nav_box button {
+        width: 100%;
+        font-size: 18px;
+    }
+    .contener_text {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .text_box {
+        width: 100%;
+        text-align: center;
+    }
+    .text_box .img1,
+    .text_box .img2,
+    .text_box .img3 {
+        width: 100px;
+        height: 90px;
+    }
+    .text_box h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .text_box p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .product_content {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .product_box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .product_box img {
+        width: 100%;
+        height: 300px;
+    }
+    .product_box h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .product_box .cena h4 {
+        font-size: 16px;
+    }
+    .product_box .cena p {
+        font-size: 12px;
+    }
+    .product_box .cena span {
+        font-size: 12px;
+    }
+    .product_box button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .poster {
+        width: 100%;
+        height: auto;
+    }
+}
